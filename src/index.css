@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: "Plus Jakarta Sans";
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #f5f5f5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  clip-path: circle(0% at calc(97% - 1.5rem) calc(3% + 1.5rem));
+  transition: clip-path 0.6s cubic-bezier(0.39, 0.58, 0.57, 1);
+  overflow: auto;
+  height: 100%;
+}
+
+.menu ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu li {
+  overflow: hidden;
+}
+
+.menu .link-list {
+  display: inline-block;
+  text-decoration: none;
+  transform-origin: 0% 0%;
+  transform: translateY(100%) rotate(5deg);
+  transition: transform 0.3s ease-in;
+}
+
+.menu-active {
+  clip-path: circle(145% at calc(95% - 1.5rem) calc(2% + 1.5rem));
+}
+
+.menu-active .link-list {
+  transition: transform 0.6s cubic-bezier(0.43, 0.08, 0.31, 0.95);
+  transform: translateY(0);
+}
+
+.menu-active li:nth-child(1) a {
+  transition-delay: 0.3s;
+}
+
+.menu-active li:nth-child(2) a {
+  transition-delay: 0.38s;
+}
+
+.menu-active li:nth-child(3) a {
+  transition-delay: 0.44s;
+}
+
+.menu-active li:nth-child(4) a {
+  transition-delay: 0.48s;
+}
+
+.menu-active li:nth-child(5) a {
+  transition-delay: 0.5s;
+}
+
+.menu-active li:nth-child(6) a {
+  transition-delay: 0.52s;
+}
+
+.menu-active li:nth-child(7) a {
+  transition-delay: 0.6s;
+}
+
+.menu-toggle {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  margin: 0px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 70%;
+  height: 2px;
+  flex: none;
+  margin: 0.25rem 0;
+  background: black;
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease;
+}
+
+.menu-toggle-active {
+  border-color: #000;
+}
+
+.menu-toggle-active span:nth-child(1) {
+  transform: translateY(0.5rem) translateY(2px) rotate(135deg);
+}
+
+.menu-toggle-active span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.menu-toggle-active span:nth-child(3) {
+  transform: translateY(-0.5rem) translateY(-2px) rotate(-135deg);
+}
+
+.menu-open {
+  overflow: hidden;
+}

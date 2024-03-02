@@ -1,0 +1,48 @@
+{
+  "links": [
+    {
+      "text": "Home",
+      "url": "#topo"
+    },
+    {
+      "text": "uBank",
+      "url": "#quem-somos"
+    },
+    {
+      "text": "Serviços",
+      "url": "#servicos"
+    },
+    {
+      "text": "Faq",
+      "url": "#faq"
+    },
+    {
+      "text": "Contato",
+      "url": "#contato"
+    }
+  ],
+  "linksMobile": [
+    {
+      "text": "Home",
+      "url": "#topo"
+    },
+    {
+      "text": "uBank",
+      "url": "#quem-somos"
+    },
+    {
+      "text": "Serviços",
+      "url": "#servicos"
+    },
+    {
+      "text": "Faq",
+      "url": "#faq"
+    },
+    {
+      "text": "Contato",
+      "url": "#contato"
+    }
+  ],
+  "social": {},
+  "logos": {}
+}

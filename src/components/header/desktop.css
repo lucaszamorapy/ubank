@@ -1,0 +1,22 @@
+.linha {
+  position: relative;
+}
+
+.linha::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  /* Inicia com largura zero para que a linha não seja visível inicialmente */
+  height: 2px;
+  background-color: #8318EE;
+  /* Cor da linha */
+  transition: width 0.3s ease;
+  /* Transição apenas para a largura */
+}
+
+.linha:hover::before {
+  width: 100%;
+  /* Aumenta a largura para 100% quando o mouse está sobre o elemento */
+}
