@@ -3,6 +3,7 @@ import image from "/images/img-header.png";
 import data from "../../config/home-text.json"
 import { Link } from "react-scroll";
 import SlideClient from "../../components/slide-cliente/SlideClient";
+import QuemSomos from "../../components/quem-somos/QuemSomos";
 
 const Home = () => {
   return (
@@ -38,6 +39,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <QuemSomos />
     </>
   )
 }
