@@ -70,7 +70,7 @@ const QuemSomos = () => {
         <div className="grid grid-cols-1 gap-10 px-5 lg:grid-cols-2 lg:px-0 lg:gap-28">
           <img src="./images/img-about.png" className="w-full px-5 lg:px-0"alt="" />
           <div className="flex flex-col  justify-center gap-10">
-            <h1 className="text-black px-5 text-4xl uppercase font-semibold leading-1 lg:px-0 lg:text-5xl">O <span className="text-purpleBank">Banco</span>que pode mudar sua <span className="text-blueBank">Vida</span></h1>
+            <h1 className="text-black px-5 text-4xl uppercase font-semibold leading-1 lg:px-0 lg:text-5xl">O <span className="text-purpleBank">Banco </span>que pode mudar sua <span className="text-blueBank">Vida</span></h1>
             <p className="text-blueBank tracking-normal text-md px-5 lg:text-lg lg:px-0">{text.textAbout1}</p>
             <p className="text-blueBank tracking-normal text-md px-5 lg:text-lg lg:px-0">{text.textAbout2}</p>
             <div className="flex flex-wrap items-center gap-5 px-5 lg:gap-10 lg:px-0 xl:flex-nowrap">
