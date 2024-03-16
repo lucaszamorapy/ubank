@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import SlideClient from "../../components/slide-cliente/SlideClient";
 import QuemSomos from "../../components/quem-somos/QuemSomos";
 import Servicos from "../../components/servicos/Servicos";
+import Faq from "../../components/faq/Faq";
 
 const Home = () => {
   return (
@@ -52,6 +53,7 @@ const Home = () => {
       </section>
       <QuemSomos />
       <Servicos />
+      <Faq />
     </>
   );
 };

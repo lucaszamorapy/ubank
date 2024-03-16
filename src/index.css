@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   font-family: "Plus Jakarta Sans";
   line-height: 1.5;
@@ -103,7 +102,7 @@
   height: 2px;
   flex: none;
   margin: 0.25rem 0;
-  background: black;
+  background: #8318ee;
   transition: transform 0.3s ease-in-out, opacity 0.2s ease;
 }
 

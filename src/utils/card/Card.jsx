@@ -11,7 +11,7 @@ const Card = () => {
             className="bg-white rounded-lg shadow-lg px-5 lg:px-10 py-10"
           >
             <img src={item.image} alt="" />
-            <p className="text-black text-end text-sm px-5 mt-10 lg:px-0">
+            <p className="text-gray-400 text-end text-sm px-5 mt-10 lg:px-0">
               {item.text}
             </p>
           </div>
