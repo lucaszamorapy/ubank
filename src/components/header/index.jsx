@@ -21,7 +21,7 @@ const Header = () => {
     <header className="w-screen top-0 fixed z-10 bg-white border-b-2 shadow-sm">
       <div className="container lg:py-4 items-center flex justify-between xl:gap-x-6 gap-x-2 lg:p-0 p-4">
         <Desktop isOpened={isMenuOpen} action={toggleMenu} links={links} />
-        <Mobile isOpened={isMenuOpen} links={links} />
+        <Mobile isOpened={isMenuOpen} links={links} toggleMenu={toggleMenu} />
       </div>
     </header>
   );

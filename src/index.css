@@ -16,6 +16,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bg-color {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(131, 24, 238, 1) 0%,
+    rgba(110, 54, 241, 1) 37%,
+    rgba(71, 110, 246, 1) 53%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.font-color {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(131, 24, 238, 1) 0%,
+    rgba(162, 117, 218, 1) 0%,
+    rgba(110, 54, 241, 1) 0%,
+    rgba(71, 110, 246, 1) 47%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text; /* Clip o gradiente de fundo ao texto */
+  color: transparent; /* Torna o texto transparente */
+}
+
 .menu {
   position: fixed;
   inset: 0;

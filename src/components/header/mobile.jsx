@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { useEffect } from "react";
 
-const Mobile = ({ isOpened, links }) => {
+const Mobile = ({ isOpened, links, toggleMenu }) => {
   useEffect(() => {
     const updateURL = () => {
       // Check if the page is reloaded (not a navigation within the page)
@@ -37,6 +37,8 @@ const Mobile = ({ isOpened, links }) => {
                     // Update the URL without triggering a page reload
                     window.history.replaceState({}, "", `#${sectionId}`);
                   }
+
+                  toggleMenu(); // Adiciona o seu onClick isOpened aqui
                 }}
               >
                 {link.text}

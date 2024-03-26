@@ -9,15 +9,15 @@ const Accordion = ({ title, answer }) => {
   return (
     <>
       <div className="container mt-10">
-        <div className="p-4 text-sm text-purpleBank bg-white rounded-lg shadow-lg lg:text-xl h-full hover:bg-purpleBank hover:text-white duration-300 ease-in-out">
+        <div className="p-4 font-color  bg-white rounded-lg border-2  h-full">
           <button
             onClick={toggleAccordion}
             className="flex justify-between w-full items-center"
           >
-            <span className="font-semibold">{title}</span>
+            <span className="font-semibold text-xl">{title}</span>
             {/* <span>{accordionOpen ? "-" : "+"}</span> */}
             <svg
-              className="fill-indigo-500 shrink-0 ml-8 hover:fill-white"
+              className="fill-indigo-500 shrink-0 ml-8 "
               width="16"
               height="16"
               xmlns="http://www.w3.org/2000/svg"
@@ -43,9 +43,9 @@ const Accordion = ({ title, answer }) => {
             </svg>
           </button>
           <div
-            className={`grid overflow-hidden transition-all duration-300 ease-in-out text-gray-400 text-sm ${
+            className={`grid overflow-hidden transition-all duration-300 ease-in-out text-gray-600 text-lg ${
               accordionOpen
-                ? "grid-rows-[1fr] opacity-100"
+                ? "grid-rows-[1fr] opacity-100 mt-5"
                 : "grid-rows-[0fr] opacity-0"
             }`}
           >
