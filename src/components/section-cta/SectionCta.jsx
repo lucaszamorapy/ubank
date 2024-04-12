@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import sectionImg from "../../../public/images/img-section.png";
+import sectionImg from "/images/img-section.png";
 
 const SectionCta = () => {
   return (

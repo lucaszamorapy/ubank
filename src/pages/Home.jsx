@@ -1,12 +1,10 @@
-import Header from "../../components/header";
 import image from "/images/img-header.png";
-import data from "../../config/home-text.json";
 import { Link } from "react-scroll";
-import SlideClient from "../../components/slide-cliente/SlideClient";
-import QuemSomos from "../../components/quem-somos/QuemSomos";
-import Servicos from "../../components/servicos/Servicos";
-import Faq from "../../components/faq/Faq";
-import SectionCta from "../../components/section-cta/SectionCta";
+import SlideClient from "../components/slide-cliente/SlideClient";
+import QuemSomos from "../components/quem-somos/QuemSomos";
+import Servicos from "../components/servicos/Servicos";
+import Faq from "../components/faq/Faq";
+import SectionCta from "../components/section-cta/SectionCta";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -17,7 +15,6 @@ const Home = () => {
   }, []);
   return (
     <>
-      <Header />
       <section id="topo" className="mt-40" data-aos="fade-up">
         <div className="container">
           <div className="flex flex-col justify-center gap-4 lg:grid lg:grid-cols-2">
@@ -28,7 +25,8 @@ const Home = () => {
                 <br /> <span className="font-color">sonhos</span>
               </h1>
               <p className="text-gray-400 px-5 text-md lg:px-0 lg:pr-52 lg:mt-10 lg:text-lg">
-                {data.dynamicText}
+                O banco digital que chegou para facilitar seu bolso e tudo isso
+                de forma eficaz!
               </p>
               <div className="flex flex-col justify-center items-center gap-5 mt-4 px-5 lg:px-0 md:flex-row md:justify-start">
                 <Link
