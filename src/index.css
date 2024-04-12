@@ -27,6 +27,15 @@
   );
 }
 
+.blue-gradient {
+  background: rgb(25, 17, 67);
+  background: linear-gradient(
+    90deg,
+    rgba(25, 17, 67, 1) 0%,
+    rgba(52, 32, 154, 1) 100%
+  );
+}
+
 .font-color {
   background: linear-gradient(
     90deg,

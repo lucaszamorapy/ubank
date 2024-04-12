@@ -6,12 +6,19 @@ import SlideClient from "../../components/slide-cliente/SlideClient";
 import QuemSomos from "../../components/quem-somos/QuemSomos";
 import Servicos from "../../components/servicos/Servicos";
 import Faq from "../../components/faq/Faq";
+import SectionCta from "../../components/section-cta/SectionCta";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <Header />
-      <section id="topo" className="mt-40">
+      <section id="topo" className="mt-40" data-aos="fade-up">
         <div className="container">
           <div className="flex flex-col justify-center gap-4 lg:grid lg:grid-cols-2">
             <div className="flex flex-col gap-4">
@@ -54,6 +61,7 @@ const Home = () => {
       <QuemSomos />
       <Servicos />
       <Faq />
+      <SectionCta />
     </>
   );
 };

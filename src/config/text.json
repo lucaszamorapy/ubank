@@ -1,4 +1,26 @@
 {
   "textAbout1": "No coração do mundo digital, onde a agilidade é a moeda mais valiosa e a simplicidade é a chave para a liberdade financeira, nasce o uBank. Somos mais do que um banco, somos uma ponte entre você e suas aspirações, uma plataforma desenhada para simplificar sua vida financeira, com um olhar voltado especialmente para o público jovem.",
-  "textAbout2": "No uBank, não apenas simplificamos sua vida financeira, mas também abraçamos sua jornada. Somos mais do que um banco, somos seu parceiro na busca pela liberdade financeira. Junte-se a nós e conecte-se a um futuro de possibilidades ilimitadas."
+  "textAbout2": "No uBank, não apenas simplificamos sua vida financeira, mas também abraçamos sua jornada. Somos mais do que um banco, somos seu parceiro na busca pela liberdade financeira. Junte-se a nós e conecte-se a um futuro de possibilidades ilimitadas.",
+  "AccordionText": [
+    {
+      "title": "Qual o nível de segurança da uBank?",
+      "answer": "A segurança do Ubank, ou de qualquer instituição financeira, depende de vários fatores, incluindo medidas de segurança técnica, políticas de segurança, conformidade regulatória e práticas de segurança cibernética. "
+    },
+    {
+      "title": "Como o Ubank protege as transações financeiras dos seus clientes?",
+      "answer": "O Ubank emprega sistemas avançados de detecção de fraudes que monitoram constantemente as atividades das contas dos clientes em busca de padrões incomuns ou atividades suspeitas."
+    },
+    {
+      "title": "Qual a abordagem do Ubank em relação à privacidade dos dados dos clientes?",
+      "answer": "O Ubank considera a privacidade dos dados dos clientes como uma prioridade máxima. Todas as informações pessoais e financeiras são tratadas com o mais alto nível de confidencialidade e são protegidas por protocolos de segurança rigorosos. Além disso, o Ubank adere às regulamentações de privacidade de dados locais e internacionais para garantir a proteção adequada das informações dos clientes."
+    },
+    {
+      "title": "Quais medidas de segurança o Ubank implementa ?",
+      "answer": "O Ubank utiliza criptografia de ponta a ponta para proteger todas as transmissões de dados entre os dispositivos dos clientes e os servidores do Ubank. Isso significa que todas as informações enviadas ou recebidas durante as transações online são codificadas de forma segura, tornando extremamente difícil para terceiros não autorizados acessarem ou interceptarem os dados."
+    },
+    {
+      "title": "Como o Ubank garante a integridade e autenticidade das transações financeiras realizadas por seus clientes?",
+      "answer": "O Ubank implementa uma variedade de técnicas para garantir a integridade e autenticidade das transações financeiras de seus clientes. Isso inclui o uso de assinaturas digitais e autenticação de dois fatores para verificar a identidade do cliente e garantir que todas as transações sejam legítimas e não tenham sido adulteradas durante o processo de envio."
+    }
+  ]
 }

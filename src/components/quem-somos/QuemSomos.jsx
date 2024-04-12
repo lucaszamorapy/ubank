@@ -69,7 +69,7 @@ const QuemSomos = () => {
 
   return (
     // Componente de seção "Quem somos?"
-    <section id="quem-somos" className="mt-40 ">
+    <section id="quem-somos" className="mt-40 " data-aos="fade-down">
       <div className="container py-10 rounded-xl bg-grayBank bg-opacity-20 shadow-lg lg:px-10 ">
         <div className="grid grid-cols-1 gap-10 px-5 lg:grid-cols-2 lg:px-0 lg:gap-28">
           <img

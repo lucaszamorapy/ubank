@@ -4,7 +4,7 @@ import Card from "../../utils/card/Card";
 const Servicos = () => {
   return (
     <>
-      <section id="servicos" className="mt-40">
+      <section id="servicos" className="mt-40" data-aos="zoom-in">
         <div className="container">
           <h1 className="text-gray-800 px-5 text-4xl uppercase font-semibold leading-1 lg:px-0 lg:text-5xl">
             Vem tranquilo <br /> com a{" "}
