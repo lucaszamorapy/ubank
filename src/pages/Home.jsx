@@ -58,8 +58,8 @@ const Home = () => {
       </section>
       <QuemSomos />
       <Servicos />
-      <Faq />
       <SectionCta />
+      <Faq />
     </>
   );
 };
