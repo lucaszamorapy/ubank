@@ -49,29 +49,17 @@ const Mobile = ({ isOpened, links, toggleMenu }) => {
 
         <ul className="flex justify-center gap-x-10 px-4 bg-blackBirdz py-4">
           <li>
-            <a
-              href="https://www.facebook.com/agenciabirdz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={32} color="#8318EE" />
             </a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/company/agencia-birdz/about/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={32} color="#8318EE" />
             </a>
           </li>
           <li>
-            <a
-              href="https://www.instagram.com/agenciabirdz/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={32} color="#8318EE" />
             </a>
           </li>

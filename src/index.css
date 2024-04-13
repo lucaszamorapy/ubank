@@ -50,6 +50,18 @@
   color: transparent; /* Torna o texto transparente */
 }
 
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px); /* Move para cima */
+  }
+  100% {
+    transform: translateY(0); /* Retorna à posição inicial */
+  }
+}
+
 .menu {
   position: fixed;
   inset: 0;

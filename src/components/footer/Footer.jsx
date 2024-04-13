@@ -20,35 +20,23 @@ const Footer = () => {
           </Link>{" "}
           AGORA!
         </h1>
-        <div className="flex justify-between mt-24 py-5 border-t-2 border-gray-200 items-center flex-col lg:flex-row">
+        <div className="flex justify-between text-center px-5 mt-24 py-5 border-t-2 border-gray-200 items-center flex-col lg:flex-row lg:px-0 lg:text-start">
           <p className="text-gray-400">
             Copyright ©2024 Todos os direitos reservados
           </p>
           <ul className="flex items-center gap-x-10 px-4 bg-blackBirdz py-4">
             <li>
-              <a
-                href="https://www.facebook.com/agenciabirdz"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook size={32} color="#8318EE" />
               </a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/company/agencia-birdz/about/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={32} color="#8318EE" />
               </a>
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/agenciabirdz/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={32} color="#8318EE" />
               </a>
             </li>
