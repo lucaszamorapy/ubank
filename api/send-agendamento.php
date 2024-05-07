@@ -1,5 +1,20 @@
 <?php
 
+header("Access-Control-Allow-Origin: *");
+
+// Permitir solicitações com os métodos GET, POST, PUT, DELETE e OPTIONS
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
+
+// Permitir que o cabeçalho 'Content-Type' seja enviado
+header("Access-Control-Allow-Headers: Content-Type");
+
+// Verificar se é uma solicitação 'OPTIONS'
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+  // Responder com sucesso e encerrar o script
+  http_response_code(200);
+  exit;
+}
+
 date_default_timezone_set('America/Sao_Paulo');
 
 use PHPMailer\PHPMailer\PHPMailer;
