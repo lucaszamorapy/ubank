@@ -96,15 +96,15 @@ try {
   $mail->IsSMTP();
   $mail->Host = "smtp.gmail.com";
   $mail->SMTPAuth = true;
-  $mail->Username = 'seu_email@gmail.com';
-  $mail->Password = 'sua_senha';
+  $mail->Username = 'lucaszamora.zulmira@gmail.com';
+  $mail->Password = 'Betoven2606';
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port = 587;
 
   // Remetente e destinatário do e-mail
-  $mail->setFrom('seu_email@gmail.com', 'Seu Nome');
-  $mail->addAddress('seu_email@gmail.com', 'Seu Nome');
-  $mail->addBCC('seu_email@gmail.com', 'Seu Nome');
+  $mail->setFrom('avellar.dev@gmail.com', 'Seu Nome');
+  $mail->addAddress('avellar.dev@gmail.com', 'Seu Nome');
+  $mail->addBCC('avellar.dev@gmail.com', 'Seu Nome');
 
   // Configurações adicionais do e-mail
   $mail->IsHTML(true);
