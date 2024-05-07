@@ -119,7 +119,7 @@ try {
   $mail->CharSet = 'UTF-8';
 
   // Assunto e corpo do e-mail do cliente
-  $mail->Subject = "$platform | UBank | Agende sua conta - Nº  $maxId";
+  $mail->Subject = "UBank | Agende sua conta - Nº  $maxId";
   $mail->Body = $bodyCliente;
 
   // Envie o e-mail
