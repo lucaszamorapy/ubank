@@ -79,8 +79,6 @@ $bodyCliente  = "
 <td><font face='Arial, Helvetica, sans-serif'> $email </font> </td></tr>
 <tr bgcolor='#f8f8f8'><td><font face='Arial, Helvetica, sans-serif'><b>Mensagem:</b></font></td> 
 <td><font face='Arial, Helvetica, sans-serif'> $ds_message </font> </td></tr>
-<tr bgcolor='#f8f8f8'><td><font face='Arial, Helvetica, sans-serif'><b>Data:</b></font></td> 
-<td><font face='Arial, Helvetica, sans-serif'> $date </font> </td></tr>
 </table>
 ";
 
