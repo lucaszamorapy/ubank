@@ -1,4 +1,6 @@
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const useFetch = () => {
   const [data, setData] = useState(null);
@@ -17,19 +19,17 @@ const useFetch = () => {
       json = await response.json();
       if (response.ok === false) throw new Error(json.message);
       if (response.ok) {
-        setResponseMessage(
-          `Muito obrigado por entrar em contato, em breve retornaremos sua Solicitação.`
-        );
+        toast.success("Mensagem enviada com sucesso!");
         setIsSubmitDisabled(true);
       }
     } catch (error) {
-      console.error("Erro na solicitação:", error);
-      setResponseMessage("Erro ao enviar o email");
+      // console.error("Erro na solicitação:", error);
+      toast.error("Falha ao enviar a mensagem.");
     } finally {
       setData(json);
       setLoading(false);
-      return { response, json };
     }
+    return { response, json };
   }, []);
 
   return {
@@ -39,6 +39,8 @@ const useFetch = () => {
     request,
     isSubmitDisabled,
     responseMessage,
+    setResponseMessage,
+    setLoading,
   };
 };
 

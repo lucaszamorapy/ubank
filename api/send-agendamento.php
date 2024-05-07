@@ -24,9 +24,8 @@ require "vendor/autoload.php";
 
 $nm_name = $_POST['nm_name'] ?? '';
 $email = $_POST['email'] ?? '';
-$phone = $_POST['phone'] ?? '';
 $ds_message = $_POST['ds_message'] ?? '';
-$date = date("Y-m-d H:i:s"); // Capturando a data atual
+
 
 // Configurações do banco de dados PostgreSQL
 $servername = "pgsql:host=ep-round-wind-a4spkjhx-pooler.us-east-1.aws.neon.tech;port=5432;dbname=verceldb";
@@ -41,8 +40,8 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   // Prepara e executa a declaração SQL para inserir dados no banco de dados
-  $stmt = $conn->prepare("INSERT INTO formulario (nm_name, email, phone, ds_message, date) VALUES (?, ?, ?, ?, ?)");
-  $stmt->execute([$nm_name, $email, $phone, $ds_message, $date]);
+  $stmt = $conn->prepare("INSERT INTO formulario (nm_name, email, ds_message) VALUES (?, ?, ?)");
+  $stmt->execute([$nm_name, $email, $ds_message]);
 
   // Obtém o ID do último registro inserido
   $maxId = $conn->lastInsertId();
@@ -78,8 +77,6 @@ $bodyCliente  = "
 <td><font face='Arial, Helvetica, sans-serif'> $nm_name </font> </td></tr>
 <tr bgcolor='#f8f8f8'><td><font face='Arial, Helvetica, sans-serif'><b>Email:</b></font></td> 
 <td><font face='Arial, Helvetica, sans-serif'> $email </font> </td></tr>
-<tr bgcolor='#f8f8f8'><td><font face='Arial, Helvetica, sans-serif'><b>Telefone:</b></font></td> 
-<td><font face='Arial, Helvetica, sans-serif'> $phone </font> </td></tr>
 <tr bgcolor='#f8f8f8'><td><font face='Arial, Helvetica, sans-serif'><b>Mensagem:</b></font></td> 
 <td><font face='Arial, Helvetica, sans-serif'> $ds_message </font> </td></tr>
 <tr bgcolor='#f8f8f8'><td><font face='Arial, Helvetica, sans-serif'><b>Data:</b></font></td> 

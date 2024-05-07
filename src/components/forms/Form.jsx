@@ -13,9 +13,9 @@ const Forms = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("nome", nome.value);
+    formData.append("nm_name", nome.value);
     formData.append("email", email.value);
-    formData.append("message", message.value);
+    formData.append("ds_message", message.value);
 
     const { url, options } = EMAIL_POST(formData); // Obtém a URL e as opções de requisição para postagem de foto
     request(url, options); // Envia a requisição HTTP
