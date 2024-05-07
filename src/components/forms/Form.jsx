@@ -4,6 +4,7 @@ import useFetch from "../../hooks/useFecth";
 import { EMAIL_POST } from "../../api";
 import UbankCard from "/images/card-ubank.png";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const Forms = () => {
   const nome = useForm("name");
