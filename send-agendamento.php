@@ -56,9 +56,7 @@ $bodyCliente  = "
 <tr bgcolor='#f8f8f8'>
 <td colspan='4'>
 <center>
-<a target='_blank' href='ubank-tawny.vercel.app'>
-    <img style='width:180px; height:56px' src='https://summer-dev.com.br/concepts/logline/sites/v1/logo/logo-topo-blue.png'>
-</a>
+
 </center>
 </td>
 </tr>
