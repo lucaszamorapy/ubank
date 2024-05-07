@@ -17,11 +17,10 @@ const useFetch = () => {
       setLoading(true);
       response = await fetch(url, options);
       json = await response.json();
+      if (response.ok === false) throw new Error(json.message);
       if (response.ok) {
         toast.success("Mensagem enviada com sucesso!");
         setIsSubmitDisabled(true);
-      } else {
-        toast.error("Falha ao enviar a mensagem.");
       }
     } catch (error) {
       // console.error("Erro na solicitação:", error);
