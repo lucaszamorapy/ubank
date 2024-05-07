@@ -3,6 +3,7 @@ import useForm from "../../hooks/useForms";
 import useFetch from "../../hooks/useFecth";
 import { EMAIL_POST } from "../../api";
 import UbankCard from "/images/card-ubank.png";
+import "react-toastify/dist/ReactToastify.css";
 
 const Forms = () => {
   const nome = useForm("name");
@@ -49,6 +50,9 @@ const Forms = () => {
               name="message"
               {...message}
             />
+
+            <ToastContainer limit={1} />
+
             {loading ? (
               <button
                 disabled
