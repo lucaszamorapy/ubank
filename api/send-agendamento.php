@@ -22,7 +22,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require "vendor/autoload.php";
 
-$name = $_POST['name'] ?? '';
+$nome = $_POST['name'] ?? '';
 $email = $_POST['email'] ?? '';
 $phone = $_POST['phone'] ?? '';
 $message = $_POST['message'] ?? '';
@@ -111,8 +111,8 @@ try {
   $mail->IsSMTP();
   $mail->Host = "smtp.gmail.com";
   $mail->SMTPAuth = true;
-  $mail->Username = 'lucaszamora.zulmira@gmail.com';
-  $mail->Password = 'Betoven2606';
+  $mail->Username = 'lucas.zamora@summercomunicacao.com.br';
+  $mail->Password = '1Uz@9orN';
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port = 587;
 
