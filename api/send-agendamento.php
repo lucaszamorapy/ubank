@@ -46,7 +46,7 @@ try {
   // Obtém o ID do último registro inserido
   $maxId = $conn->lastInsertId();
 
-  // Resposta JSON
+  // Resposta JSONj
   $response = [
     'success' => true,
     'message' => 'E-mails enviados com sucesso!',
@@ -110,9 +110,9 @@ try {
   $mail->Port = 587;
 
   // Remetente e destinatário do e-mail
-  $mail->setFrom('avellar.dev@gmail.com', 'Seu Nome');
-  $mail->addAddress('avellar.dev@gmail.com', 'Seu Nome');
-  $mail->addBCC('avellar.dev@gmail.com', 'Seu Nome');
+  $mail->setFrom('avellar.dev@gmail.com', 'Lucas Zamora');
+  $mail->addAddress('avellar.dev@gmail.com', 'Lucas UBank');
+  $mail->addBCC('avellar.dev@gmail.com', 'Cópia');
 
   // Configurações adicionais do e-mail
   $mail->IsHTML(true);
